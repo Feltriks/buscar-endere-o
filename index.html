@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador de CEP</h1>
+        
+        <form id="addressForm">
+            <label for="logradouro">Nome da Rua/Avenida:</label>
+            <input type="text" id="logradouro" placeholder="Ex: Avenida Paulista" required>
+            
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" placeholder="Ex: São Paulo" required>
+            
+            <label for="uf">Estado (Sigla):</label>
+            <input type="text" id="uf" maxlength="2" placeholder="Ex: SP" required>
+            
+            <button type="submit">Buscar CEP</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
